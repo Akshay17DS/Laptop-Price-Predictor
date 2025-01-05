@@ -1,23 +1,72 @@
-# Restaurant EDA - Exploring Restaurant Data
+# Laptop Price Predictor 💻📈
 
 ## Project Overview
-This project focuses on performing Exploratory Data Analysis (EDA) on a dataset of restaurants. The dataset contains information about various restaurants, including location, cuisine, ratings, pricing, and availability of services such as online delivery, table booking, etc.
+This project predicts laptop prices based on specifications like brand, screen size, processor, RAM, and more. It showcases the end-to-end process of building a machine learning model, from data preprocessing to evaluation.
 
-## Introduction
-The objective of this project is to explore a dataset that contains information about restaurants, such as their location, cuisine type, ratings, and pricing. This project performs several EDA tasks, including:
+## Dataset
 
+The dataset contains 1,303 rows with the following key columns:
 
-## Steps Involved
-Step 1 - Basic understanding of the data
-Step 2 - Exploratory Data Analysis
-Step 3 - Visualizations
+Company: Brand of the laptop.
 
-## Results and Visualizations
+TypeName: Type/category of the laptop.
 
-The following visualizations were created as part of this analysis:
+Inches: Screen size.
 
-Distribution of Cuisines: A bar chart showing the most common cuisines across all restaurants.
+Cpu, Ram, Memory, Gpu: Specifications of the laptop.
 
-Restaurant Distribution by City and Country: A heatmap of the number of restaurants in different cities and countries.
+Weight: Laptop's weight.
 
-Price vs Rating Analysis: Scatter plots to analyze the relationship between average cost and restaurant ratings.
+Price: Target variable (price in numerical format).
+
+## Steps
+
+## 1. Data Preprocessing
+
+Cleaned and formatted columns like Cpu, Memory, and ScreenResolution to extract meaningful features.
+
+Converted weight values into numerical format.
+
+Encoded categorical variables like Company, TypeName, and OpSys using label encoding.
+
+## 2. Feature Engineering
+
+Extracted numerical values from Ram, Weight, and ScreenResolution.
+
+Engineered new features like pixel density and storage type counts.
+
+## 3. Exploratory Data Analysis (EDA)
+
+Analyzed the distribution and trends in the dataset.
+
+Identified features with high predictive power.
+
+## 4. Model Building
+
+Algorithms Used:
+
+Linear Regression
+
+Random Forest Regressor
+
+XGBoost Regressor
+
+## 5. Model Evaluation
+
+Evaluated models using the following metrics:
+
+Mean Absolute Error (MAE)
+
+R² Score
+
+## Installation
+Clone the repo:
+git clone https://github.com/yourusername/laptop-price-predictor.git
+
+Install dependencies:
+pip install -r requirements.txt
+
+## Future Improvements
+Add features like battery life and screen refresh rate.
+
+Deploy as a web app using Flask or Streamlit.
