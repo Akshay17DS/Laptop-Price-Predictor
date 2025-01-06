@@ -21,19 +21,35 @@ Price: Target variable (price in numerical format).
 
 ## Steps
 
-## 1. Data Preprocessing
+## 1. Data Cleaning
 
-Cleaned and formatted columns like Cpu, Memory, and ScreenResolution to extract meaningful features.
+Dropped the unnecssary columns like, Unnamed: 0
 
-Converted weight values into numerical format.
+Cleaned and formatted columns like Ram, Weight.
 
-Encoded categorical variables like Company, TypeName, and OpSys using label encoding.
+## 2. EDA
 
-## 2. Feature Engineering
+## Univariate Analysis
 
-Extracted numerical values from Ram, Weight, and ScreenResolution.
+![download](https://github.com/user-attachments/assets/8d0eb0e1-c428-4494-bdde-90053ebc5478)
 
-Engineered new features like pixel density and storage type counts.
+![download](https://github.com/user-attachments/assets/a1b253ac-c249-48fd-88f5-ede53b095d71)
+
+![download](https://github.com/user-attachments/assets/40370b48-13bd-4c15-a0a2-9fa79f0eac9e)
+
+![download](https://github.com/user-attachments/assets/ccb66db7-07bd-4092-b761-9b419664f943)
+
+![download](https://github.com/user-attachments/assets/26262aa8-86c7-47cb-8b0d-166a6405b157)
+
+Created new column called ppi from Screen Resolution
+
+Created new column from Cpu, namely Cpu name, Cpu brand
+
+Memory column coverted into, HDD , SSD , Hybrid , Flash Storage
+
+Gpu converted Intel, Nvidia, AMD, ARM
+
+OpSys converted to Windows, Mac, Others/No OS/Linux
 
 ## 3. Exploratory Data Analysis (EDA)
 
