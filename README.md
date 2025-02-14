@@ -74,15 +74,3 @@ Evaluated models using the following metrics:
 Mean Absolute Error (MAE)
 
 R² Score
-
-## Installation
-Clone the repo:
-git clone https://github.com/yourusername/laptop-price-predictor.git
-
-Install dependencies:
-pip install -r requirements.txt
-
-## Future Improvements
-Add features like battery life and screen refresh rate.
-
-Deploy as a web app using Flask or Streamlit.
